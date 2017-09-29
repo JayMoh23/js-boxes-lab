@@ -1,13 +1,18 @@
 .button{
     background-color: fuchsia;
+    float: left;
 }
 
 .boxes{
-    background-color: black;
-    border:solid black 3px;
-    display: inline-block;
+    background-color:fuchsia;
+    border:solid skyblue 3px;
+    float:left;
     height: 3em;
     width:3em; 
     padding:2em;
     margin:1em;
+    color: transparent;
+    
+    
 }
+
