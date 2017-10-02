@@ -16,3 +16,19 @@
     
 }
 
+
+
+
+boxDiv.addEventListener('dblclick', function(){
+    if (boxDiv.id % 2 === 0){
+        alert("youre doing something right")
+    }
+    })
+
+
+    boxDiv.addEventListener('dblclick', function(){
+        if (boxDiv.id% 2 ==1){
+            alert("youre doing something right")
+        }
+    })
+   

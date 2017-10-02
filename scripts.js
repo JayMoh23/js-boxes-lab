@@ -31,12 +31,16 @@ document.addEventListener('DOMContentLoaded', function() {
          })
 
 
-         boxDiv.addEventListener('dblclick', function(){
-         if (boxDiv.id %2){
-             alert("youre doing something right")
-         }
-         })
-        
+         boxDiv.addEventListener('dblclick', function () {
+            if (boxDiv.previousSibling === btn) {
+                alert('Nothing to remove');
+           } else if (boxDiv.id % 2 != 0) {
+               boxDiv.previousSibling.remove();
+           } else if (boxDiv.nextSibling === null) {
+               alert('Nothing to remove');
+           } else if (boxDiv.id % 2 === 0) {
+               boxDiv.nextSibling.remove();
+           }
 
          
 
